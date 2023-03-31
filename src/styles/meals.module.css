@@ -1,0 +1,238 @@
+.section_meals {
+    padding: 4rem 0  ;
+}
+
+
+.container {
+    max-width: 80rem;
+    max-height: 20rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.subheading {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 450;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.80px;
+}
+
+
+.heading_secondary {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 6rem;
+}
+
+.gcontainer {
+    max-width: 80rem;
+    padding: 0 3rem;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 5rem;
+    row-gap: 9.6rem;
+    margin-bottom: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.meal {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.meal_img {
+    width: 100%;
+}
+
+.meal_content {
+    padding: 3rem 2rem 4rem 2rem;
+}
+
+.meal_tags {
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+.meal_title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+.meal_attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+
+.tag_vegetarian {
+    background-color: #51cf66;
+    display: inline-block;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.tag_vegan {
+    background-color: #94d82d;
+
+    display: inline-block;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+.tag_paleo {
+    background-color: #ffd43d;
+    display: inline-block;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.heading_tertiary {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 3rem;}
+
+    .list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+    .list_item {
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        line-height: 1.4;
+        letter-spacing: 1px;
+    }
+    .list_icon {
+        width: 1.1rem;
+        height: 1.1rem;
+        color: #e67e22;
+        visibility: visible;
+        margin-right: 10px;
+        margin-bottom: -2px;
+    }
+    .list_tick {
+        width: 2rem;
+        height: 1.8rem;
+        color: #e67e22;
+        visibility: visible;
+        margin-bottom: -2px;
+    }
+
+    .meal:hover {
+        transform: translateY(-1.2rem);
+        box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+      }
+
+
+      .rcontainer {
+        max-width: 120rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .link, .link:visited {
+        display: inline-block;
+        color: #e67e22;
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 2px;
+        transition: all 0.3s;
+    }
+
+    .link:hover{
+        color: #cf711f;
+        border-bottom: 1px solid transparent;
+    }
+    .link:active {
+        border: 4px solid#cf711f ;
+    }
+    
+    @media (max-width: 1200px){
+.gcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    
+}
+.diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+.list_item {
+    font-size: 1.2rem;
+gap: 1.2rem;
+}
+
+.heading_tertiary {
+    font-size: 1.5rem;
+    margin-bottom:1rem ;
+}
+
+.list {
+    gap: 0.5rem;
+}
+
+
+.heading_secondary {
+    margin-bottom: 2rem;
+} 
+
+}
+
+
+@media (max-width: 700px)
+{.gcontainer {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+    margin: 2rem 0;
+}
+.list_item {
+    font-size: 1.2rem;
+gap: 1.2rem;
+}
+
+.heading_tertiary {
+    font-size: 1.5rem;
+    margin-bottom:1rem ;
+}
+
+.list {
+    gap: 0.5rem;
+}
+
+.heading_secondary {
+    font-size: 1.5em;
+    margin-bottom: 2rem;
+} 
+
+.meal_title {
+    font-size: 1.3rem;
+} 
+
+}
