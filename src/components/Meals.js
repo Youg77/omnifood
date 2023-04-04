@@ -1,16 +1,22 @@
 import React from "react";
-import { scroller } from "react-scroll";
+// import { scroller } from "react-scroll";
 import { Link } from "react-router-dom";
 import styles from "../styles/meals.module.css";
 import meal1 from "../assets/meals/meal-1.jpg";
 import meal2 from "../assets/meals/meal-2.jpg";
 
 const Meals = () => {
-  const scrollToComponent = (componentName) => {
-    scroller.scrollTo(componentName, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
+  // const scrollToComponent = (componentName) => {
+  //   scroller.scrollTo(componentName, {
+  //     duration: 800,
+  //     delay: 0,
+  //     smooth: "easeInOutQuart",
+  //   });
+  // };
+  const goTop = () => {
+    window.scrollTo({
+      top: (0, 0),
+      behavior: "smooth",
     });
   };
   return (
@@ -203,11 +209,7 @@ const Meals = () => {
       </div>
 
       <div className={styles.rcontainer}>
-        <Link
-          to="/"
-          className={styles.link}
-          onClick={() => scrollToComponent("top")}
-        >
+        <Link to="/" className={styles.link} onClick={() => goTop}>
           See all recipes →
         </Link>
       </div>
