@@ -2,13 +2,6 @@ import React from "react";
 import styles from "../styles/form.module.css";
 
 const Form = () => {
-  //   const myStyle = {
-  //     position: "relative !important",
-  //     height: "0px !important",
-  //     width: "0px !important",
-  //     float: "left !important",
-  //   };
-
   return (
     <div>
       <section className={styles.section_cta} id="cta">
@@ -24,7 +17,7 @@ const Form = () => {
                 first meal is on us!
               </p>
 
-              <from className={styles.cta_form} name="sign-up">
+              <div className={styles.cta_form} name="sign-up">
                 <div>
                   <label htmlFor="full-name">Full Name</label>
                   <input
@@ -64,10 +57,7 @@ const Form = () => {
                 <button className={`${styles.btn} ${styles.btn__form}`}>
                   Sign up now
                 </button>
-
-                {/* <!-- <input type="checkbox" />
-            <input type="number" /> --> */}
-              </from>
+              </div>
             </div>
             <div
               className={styles.cta_img_box}

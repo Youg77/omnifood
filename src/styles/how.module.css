@@ -1,21 +1,23 @@
+.howContainer{
+    padding: 4rem 0;
+}
+
 .section_how {
-    padding: 5rem 0;
-    max-width: 100vw;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .container {
-    max-width: 90vw;
     padding: 0 6.5rem;
-    margin: 0 auto;
 }
 
 .subheading {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #cf711f;
     text-transform: uppercase;
-    margin-bottom: 1.6rem;
+    padding: 1rem 0 2rem 0;
     letter-spacing: 0.75px;
 }
 

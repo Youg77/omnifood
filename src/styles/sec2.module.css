@@ -1,10 +1,10 @@
 .section_featured {
-    padding: 4rem 0 ;
+    padding: 2rem 0 ;
 }
 
 .container {
-    max-width: 82rem;
-    padding: 0 3rem;
+    max-width: 80rem;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -14,7 +14,7 @@
     letter-spacing: 0.9px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     color: #888;
 }
 .step_description {
@@ -33,9 +33,12 @@
 }
 /*sm*/
 @media (max-width: 950px){
+    .section_featured {
+        padding: 0.5rem 0 0.5rem 0;
+    }
     .heading_featured_in {
         font-size: 0.6rem;
-        margin: 2rem 0;
+        padding: 2rem 0;
     }
     .logos img {
         display: flex;
@@ -43,9 +46,7 @@
         height: 0.8rem;
     }
     
-    .section_featured {
-        padding: 0.5rem 0 0.5rem 0;
-    }
+    
    
     
 

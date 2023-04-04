@@ -29,7 +29,7 @@ const Pricing = () => {
             <header className={styles.plan_header}>
               <p className={styles.plan_name}>Starter</p>
               <p className={styles.plan_price}>
-                <span>$</span>399
+                <span className={styles.span}>$</span>399
               </p>
               <p className={styles.plan_text}>
                 per month. That's just $13 per meal!
@@ -89,7 +89,7 @@ const Pricing = () => {
             <header className={styles.plan_header}>
               <p className={styles.plan_name}>Complete</p>
               <p className={styles.plan_price}>
-                <span>$</span>649
+                <span className={styles.span}>$</span>649
               </p>
               <p className={styles.plan_text}>
                 per month. That's just $11 per meal!
