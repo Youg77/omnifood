@@ -209,7 +209,7 @@ const Meals = () => {
       </div>
 
       <div className={styles.rcontainer}>
-        <Link to="/" className={styles.link} onClick={() => goTop}>
+        <Link to="/" className={styles.link} onClick={goTop}>
           See all recipes →
         </Link>
       </div>
